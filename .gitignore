@@ -1,4 +1,5 @@
-.cache/
-.eggs/
-.idea/
 *.pyc
+.idea/
+.eggs/
+.cache/
+__pycache__

@@ -3,5 +3,5 @@ def eat():
     return 'eaten'
 
 
-# if __name__ == "__main__":
-#     eat()
+if __name__ == "__main__":
+    eat()

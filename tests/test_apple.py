@@ -1,5 +1,5 @@
-from app import apple
+from app import main
 
 
 def test_apple():
-    assert apple.eat() == 'eaten'
+    assert main.eat() == 'eaten'

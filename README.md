@@ -1,12 +1,19 @@
 * pytest project structure
 
 ```
-	|—project 
-		|————application
-		|        |———— __init__
-		|        └————  module
-		└————tests
-		         └———— test_module
+project
+│   README.md
+│   documentation.txt    
+│
+└───application
+│   │   __init__.py
+│   │    module.py
+│   │
+│   └───package
+│       │   ...
+│   
+└───tests
+    │   test_module.py
 ```
 
 * make sure that the root director **does not** have __init__
