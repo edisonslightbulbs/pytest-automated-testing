@@ -3,8 +3,8 @@
 ```
 	|—project 
 		|————application
-		|		 |———— __init__
-		|		 └————  module
+		|        |———— __init__
+		|        └————  module
 		└————tests
 		         └———— test_module
 ```
