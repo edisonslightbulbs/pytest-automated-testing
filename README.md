@@ -1,5 +1,9 @@
 * pytest project structure
 
+* both the root and the test directories should not have an __init__
+* from the project-root directory run pytest or python3 pytest -m 
+
+
 ```
 project
 │   README.md
@@ -16,6 +20,6 @@ project
     │   test_module.py
 ```
 
-* make sure that the root director **does not** have __init__
-* make sure that the tests directory **does not** have __init__
-* from the project root directory run pytest / pytest -m 
+Plugin architecture.
+Auto discovery of test modules and functions.
+Due to pytest's assertion and introspection, only plain assert statements are used.
