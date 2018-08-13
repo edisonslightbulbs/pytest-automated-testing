@@ -27,3 +27,7 @@ Plugin architecture.
 Auto discovery of test modules and functions.
 
 Due to pytest's assertion and introspection, only plain assert statements are used.
+
+# pytest.raises
+
+likely to be better for cases where you are testing exceptions deliberately raised in your own source code 
