@@ -20,7 +20,10 @@ project
 └───tests
     │   test_module.py
 ```
+# utility
 
 Plugin architecture.
+
 Auto discovery of test modules and functions.
+
 Due to pytest's assertion and introspection, only plain assert statements are used.
