@@ -1,7 +1,8 @@
-* pytest project structure
+# pytest project structure
 
-* both the root and the test directories should not have an __init__
-* from the project-root directory run pytest or python3 pytest -m 
+ both the root and the test directories should not have an __init__
+ 
+ from the project-root directory run pytest or python3 pytest -m 
 
 
 ```
