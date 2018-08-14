@@ -14,6 +14,11 @@ def test_inc():  # assert int
     # assert main.inc(3) == 5
 
 
+def test_set_func():
+    correct_set = set("1234")
+    assert main.set_func() == correct_set
+
+
 """ test if a particular exception is raised:
     here, pytest.raises is used as a context manager
 """
@@ -43,6 +48,12 @@ def test_recursion_depth():  # to gain access to actual exception information
              .value
              .traceback
         '''
+
+
+def test_match_func():
+    with pytest.raises(ValueError, match=r'123'):  # todo: wrap head  around idea
+        main.match_func()
+
 
 
 
