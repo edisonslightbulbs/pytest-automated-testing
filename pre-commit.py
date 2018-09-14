@@ -42,11 +42,11 @@ class m:  # terminal colors
 
 
 def check_status_code(code):
-    exit_code_2 = m.bl  + m.bf + " ... commit rejected: Tests were collected and run but some of the tests failed.\n" + m.e
-    exit_code_3 = m.bl  + m.bf + " ... commit rejected: Internal error happened while executing tests.\n" + m.e
-    exit_code_4 = m.bl  + m.bf + " ... commit rejected: pytest command line usage error.\n" + m.e
-    exit_code_5 = m.bl  + m.bf + " ... commit rejected: No tests were collected. \n" + m.e
-    exit_code_6 = m.bl  + m.bf + " ... commit rejected: Undefined exit code. \n" + m.e
+    exit_code_2 = m.bl + m.bf + "commit rejected: Tests were collected and run but some of the tests failed.\n" + m.e
+    exit_code_3 = m.bl + m.bf + "commit rejected: Internal error happened while executing tests.\n" + m.e
+    exit_code_4 = m.bl + m.bf + "commit rejected: pytest command line usage error.\n" + m.e
+    exit_code_5 = m.bl + m.bf + "commit rejected: No tests were collected. \n" + m.e
+    exit_code_6 = m.bl + m.bf + "commit rejected: Undefined exit code. \n" + m.e
 
     if code != 2:
         return exit_code_2, False
@@ -67,7 +67,7 @@ def check_status_code(code):
 def start_automated_testing():
     try:
         subprocess.check_call(["python3", "-m", "pytest", "-rxXs"])
-        exit_state = "... commit accepeted: All tests were collected and passed successfully. \n" , True
+        exit_state = m.bl + m.bf + "commit accepted: All tests were collected and passed successfully. \n" + m.e, True
     except subprocess.CalledProcessError as error:
         exit_state = check_status_code(error.returncode)
 
@@ -79,7 +79,7 @@ def start_automated_testing():
 
 def main():
     commit_on_exit = True
-    print(m.bl + m.bf +  "\n\n ... starting tio test" + m.e)
+    print(m.bl + m.bf + "\n\n ... starting tio test" + m.e)
     automated_test_results = start_automated_testing()
 
     if automated_test_results is not None:
