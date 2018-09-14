@@ -67,7 +67,7 @@ def check_status_code(code):
 def start_automated_testing():
     try:
         subprocess.check_call(["python3", "-m", "pytest", "-rxXs"])
-        exit_state = "... commit successful: All tests were collected and passed successfully. " , True
+        exit_state = "... commit accepeted: All tests were collected and passed successfully. \n" , True
     except subprocess.CalledProcessError as error:
         exit_state = check_status_code(error.returncode)
 
