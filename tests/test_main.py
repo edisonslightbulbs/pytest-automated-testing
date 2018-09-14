@@ -11,7 +11,6 @@ def test_apple():  # assert string
 
 def test_inc():  # assert int
     assert main.inc(3) == 4
-    # assert main.inc(3) == 5
 
 
 def test_set_func():
